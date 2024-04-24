@@ -32,15 +32,15 @@ function Navbar() {
               <a class="nav-link" href="/">
                 Dashboard
               </a>
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/products">
                 Shop
-              </a>
+              </Link>
               <a class="nav-link" href="/">
                 About
               </a>
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/contact-us">
                 Contact
-              </a>
+              </Link>
             </div>
 
             <div class="dropdown mx-5 d-flex ms-auto">
@@ -50,7 +50,7 @@ function Navbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Hello, {login === true ? name : "sign in"}
+                Hello, {login === true ? name : "user"}
               </button>
               <ul class="dropdown-menu">
                 <li>

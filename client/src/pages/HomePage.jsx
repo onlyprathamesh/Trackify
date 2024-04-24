@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+  const navigate = useNavigate()
   return (
     <>
       <Navbar />
@@ -51,9 +53,10 @@ function HomePage() {
                 alt="..."
               />
               <div className="carousel-caption d-none d-md-block">
-                <h1>First slide label</h1>
+                <h1>Fast Gen X Pro</h1>
                 <h4>
-                  Some representative placeholder content for the first slide.
+                  real time health monitoring | tracking | fitness |
+                  heart rate | sleep | calories | steps | distance |
                 </h4>
               </div>
             </div>
@@ -64,9 +67,10 @@ function HomePage() {
                 alt="..."
               />
               <div className="carousel-caption d-none d-md-block">
-                <h1>Second slide label</h1>
+                <h1>Fast Gen X Pro</h1>
                 <h4>
-                  Some representative placeholder content for the second slide.
+                real time health monitoring | tracking | fitness |
+                  heart rate | sleep | calories | steps | distance |
                 </h4>
               </div>
             </div>
@@ -77,9 +81,10 @@ function HomePage() {
                 alt="..."
               />
               <div className="carousel-caption d-none d-md-block text-black">
-                <h1>Third slide label</h1>
+                <h1>Fast Gen X Pro</h1>
                 <h4>
-                  Some representative placeholder content for the third slide.
+                real time health monitoring | tracking | fitness |
+                  heart rate | sleep | calories | steps | distance |
                 </h4>
               </div>
             </div>
@@ -90,9 +95,10 @@ function HomePage() {
                 alt="..."
               />
               <div className="carousel-caption d-none d-md-block">
-                <h1>Third slide label</h1>
+                <h1>Fast Gen X Pro</h1>
                 <h4>
-                  Some representative placeholder content for the third slide.
+                real time health monitoring | tracking | fitness |
+                  heart rate | sleep | calories | steps | distance |
                 </h4>
               </div>
             </div>
@@ -103,7 +109,7 @@ function HomePage() {
                 alt="..."
               />
               <div className="carousel-caption d-none d-md-block">
-                <h1>Third slide label</h1>
+                <h1>Fast Gen X Pro</h1>
                 <h4>
                   Some representative placeholder content for the third slide.
                 </h4>
@@ -139,9 +145,12 @@ function HomePage() {
 
       <div className="bestseller" style={{ margin: "3% 4% 4% 4%" }}>
         <div className="container-fluid roboto-regular">
+          <div className="contianer d-flex" style={{justifyContent:"space-between"}}>
           <p style={{ fontSize: "20px" }}>
             Explore <b>Bestsellers :</b>
           </p>
+          <button className="btn btn-sm btn-dark" style={{height:"0%"}} onClick={() => navigate("/products")}>View All</button>
+          </div>
           <div className="cards d-flex justify-content-between">
             <div className="card" style={{ width: "17rem" }}>
               <img
@@ -193,12 +202,12 @@ function HomePage() {
             </div>
             <div className="card" style={{ width: "17rem" }}>
               <img
-                src="./../../storm.webp"
+                src="./../../Watch_Storm_Iron_Man_Marvel_Edition.webp"
                 className="card-img-top"
                 alt="Product Image"
               />
               <div className="card-body" style={{ paddingBottom: "0px" }}>
-                <h5 className="card-title fw-bold">Wave Genesis</h5>
+                <h5 className="card-title fw-bold"> Watch Storm Iron Man Marvel Edition </h5>
                 <div className="d-flex">
                   <p
                     className="card-text"
@@ -208,13 +217,13 @@ function HomePage() {
                       fontWeight: "bold",
                     }}
                   >
-                    ₹2299
+                    ₹3699
                   </p>
                   <p
                     className="card-text text-decoration-line-through text-muted"
                     style={{ paddingRight: "5px", fontSize: "13px" }}
                   >
-                    ₹6499
+                    ₹5699
                   </p>
                   <p
                     className="card-text"
@@ -246,7 +255,7 @@ function HomePage() {
                 alt="Product Image"
               />
               <div className="card-body" style={{ paddingBottom: "0px" }}>
-                <h5 className="card-title fw-bold">Wave Genesis</h5>
+                <h5 className="card-title fw-bold"> Ultima Prism</h5>
                 <div className="d-flex">
                   <p
                     className="card-text"
@@ -262,7 +271,7 @@ function HomePage() {
                     className="card-text text-decoration-line-through text-muted"
                     style={{ paddingRight: "5px", fontSize: "13px" }}
                   >
-                    ₹6499
+                    ₹8999
                   </p>
                   <p
                     className="card-text"
@@ -289,13 +298,13 @@ function HomePage() {
             </div>
             <div className="card" style={{ width: "17rem" }}>
               <img
-                src="./../../fitbit.png"
+                src="./../../fitbit_charge_6.png"
                 className="card-img-top"
                 alt="Product Image"
                 style={{ backgroundColor: "orange", height: "75%" }}
               />
               <div className="card-body" style={{ paddingBottom: "0px" }}>
-                <h5 className="card-title fw-bold">Wave Genesis</h5>
+                <h5 className="card-title fw-bold">Fit Bit Charge 6</h5>
                 <div className="d-flex">
                   <p
                     className="card-text"
@@ -305,13 +314,13 @@ function HomePage() {
                       fontWeight: "bold",
                     }}
                   >
-                    ₹2299
+                    ₹3599
                   </p>
                   <p
                     className="card-text text-decoration-line-through text-muted"
                     style={{ paddingRight: "5px", fontSize: "13px" }}
                   >
-                    ₹6499
+                    ₹5799
                   </p>
                   <p
                     className="card-text"

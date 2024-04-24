@@ -1,20 +1,54 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from "react";
 
 function UserSignUp() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const navigate = useNavigate()
+  const [userData, setUserData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+
+  const handleEmailChange = (e) => {
+    setUserData ({
+      ...userData,
+      email : e.target.value
+    })
+  }
+  const handleUsernameChange = (e) => {
+    setUserData ({
+      ...userData,
+      username : e.target.value
+    })
+  }
+  const handlePasswordChange = (e) => {
+    setUserData ({
+      ...userData,
+      password : e.target.value
+    })
+  }
+
+  const jsonData = JSON.stringify(userData);
 
   const handleRegister = async () => {
     try {
-      await axios.post('/register', { email, password });
+      const response = await fetch(
+        "http://localhost:5000/register",
+        {
+          method : "POST",
+          headers : {
+            "Content-Type" : "application/json",
+          },
+          body : jsonData
+        }
+      )
       alert('Registration successful! Please log in.');
-      setEmail('');
-      setPassword('');
+      navigate("/");
     } catch (error) {
       alert('Registration failed. Please check your input.');
     }
+    setUserData({username:"", email:"", password:""})
   };
   return (
     <>
@@ -45,15 +79,36 @@ function UserSignUp() {
                         alignItems: "start",
                       }}
                     >
+                      <label className="form-label" for="typeUsernameX">
+                        Username
+                      </label>
+                      <input
+                        type="text"
+                        id="username"
+                        className="form-control form-control-lg color-black"
+                        value={userData.username}
+                        onChange={handleUsernameChange}
+                      />
+                    </div>
+
+                    <div
+                      data-mdb-input-init
+                      className="form-outline form-white"
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "start",
+                      }}
+                    >
                       <label className="form-label" for="typeEmailX">
                         Email
                       </label>
                       <input
                         type="email"
                         id="email"
-                        className="form-control form-control-lg"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        className="form-control form-control-lg color-black"
+                        value={userData.email}
+                        onChange={handleEmailChange}
                       />
                     </div>
 
@@ -73,8 +128,8 @@ function UserSignUp() {
                         type="password"
                         id="password"
                         className="form-control form-control-lg"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        value={userData.password}
+                        onChange={handlePasswordChange}
                       />
                     </div>
 
