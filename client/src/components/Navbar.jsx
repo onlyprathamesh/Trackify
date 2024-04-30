@@ -29,9 +29,10 @@ function Navbar() {
               <a class="nav-link active" aria-current="page" href="/">
                 Home
               </a>
-              <a class="nav-link" href="/">
-                Dashboard
-              </a>
+              <a href="http://127.0.0.1:8020/" className="nav-link">
+  Dashboard
+</a>
+
               <Link class="nav-link" to="/products">
                 Shop
               </Link>
