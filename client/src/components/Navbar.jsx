@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const login = false;
+  const handleAboutScroll = () => {
+    const aboutSection = document.getElementById("about");
+    aboutSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
   return (
     <>
       <nav
@@ -36,9 +40,9 @@ function Navbar() {
               <Link class="nav-link" to="/products">
                 Shop
               </Link>
-              <a class="nav-link" href="/">
+              <Link class="nav-link" to="/" onClick={handleAboutScroll}>
                 About
-              </a>
+              </Link>
               <Link class="nav-link" to="/contact-us">
                 Contact
               </Link>

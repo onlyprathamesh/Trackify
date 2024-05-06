@@ -349,49 +349,208 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="About" style={{ backgroundColor: "#f0efef" }}>
-        <div style={{ margin: "3% 4% 4% 4%" }}>
-          <div className="container-fluid roboto-regular">
-            <p style={{ fontSize: "20px" }}>
-              About <b>Trackify :</b>
-            </p>
-            {/* <div className="about d-flex">
-            <div className="about-content">
-              <h4>Heart Rate, SPO2 monitoring & traking</h4>
-            </div>
-            <div className="about-image" style={{position:'absolute', right:'4%'}}>
-              <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
-            </div>
-          </div> */}
-            <div>
-              <div className="container-fluid">
-                <div className="row align-items-center">
-                  <div className="col-12 col-xl-5 mx-auto">
-                    <div className="lc-block mb-3 me-lg-5">
-                      <div editable="rich">
-                        <h1 className="fw-bolder">Hello World!</h1>
-                        <p className="lead">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nullam tincidunt ac augue suscipit rhoncus.
-                          Donec ante erat, hendrerit sed eleifend et, dapibus at
-                          leo. Mauris bibendum mi ut dui sagittis volutpat.
-                        </p>
+      <div className="about" id="about">
+        <div className="About1">
+          <p style={{fontSize: "20px", margin: "0% 0% 0% 5%" }}>
+          Trackify <b>Features :</b>
+          </p>
+          <div style={{ backgroundColor: "#f0efef" }}>
+            <div style={{ margin: "3% 4% 3% 4%" }}>
+              <div className="container-fluid roboto-regular">
+                {/* <div className="about d-flex">
+                <div className="about-content">
+                  <h4>Heart Rate, SPO2 monitoring & traking</h4>
+                </div>
+                <div className="about-image" style={{position:'absolute', right:'4%'}}>
+                  <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
+                </div>
+              </div> */}
+                <div>
+                  <div className="container-fluid">
+                    <div className="row align-items-center">
+                      <div className="col-12 col-xl-5 mx-auto">
+                        <div className="lc-block mb-3 me-lg-5">
+                          <div editable="rich">
+                            <h1 className="fw-bolder">Insights on Activity Levels</h1>
+                            <p className="lead">
+                              The balance between sedentary and very active
+                              minutes, helps you track daily activity levels showcasing 
+                              fluctuations in activity throughout the day.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-10 mx-auto col-xl-5 mb-4">
+                        <div className="lc-block" style={{ paddingTop:"4%"}}>
+                          <img
+                            className="img-fluid"
+                            src="./../../dashboard/sedentary_very_active_minutes.png"
+                            srcset=""
+                            sizes=""
+                            width=""
+                            height=""
+                            alt="Photo by Alessandro Di Credico"
+                            loading="lazy"
+                            style={{ borderRadius: "10px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-10 mx-auto col-xl-5 mb-4">
-                    <div className="lc-block">
-                      <img
-                        className="img-fluid"
-                        src="./../../test1.webp"
-                        srcset=""
-                        sizes=""
-                        width=""
-                        height=""
-                        alt="Photo by Alessandro Di Credico"
-                        loading="lazy"
-                        style={{ borderRadius: "10px" }}
-                      />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="About2" style={{ backgroundColor: "white" }}>
+          <div style={{ margin: "0% 4% 0% 4%" }}>
+            <div className="container-fluid roboto-regular">
+              {/* <div className="about d-flex">
+              <div className="about-content">
+                <h4>Heart Rate, SPO2 monitoring & traking</h4>
+              </div>
+              <div className="about-image" style={{position:'absolute', right:'4%'}}>
+                <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
+              </div>
+            </div> */}
+              <div>
+                <div className="container-fluid">
+                  <div className="row align-items-center">
+                    <div className="col-md-10 mx-auto col-xl-5 mb-0">
+                      <div className="lc-block" style={{borderRadius: "10px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)"}}>
+                        <img
+                          className="img-fluid"
+                          src="./../../dashboard/total_steps_overtime.png"
+                          srcset=""
+                          sizes=""
+                          width=""
+                          height=""
+                          alt="Photo by Alessandro Di Credico"
+                          loading="lazy"
+                          style={{ borderRadius: "10px" }}
+                        />
+                        <img
+                          className="img-fluid"
+                          src="./../../dashboard/future_forcast.png"
+                          srcset=""
+                          sizes=""
+                          width=""
+                          height=""
+                          alt="Photo by Alessandro Di Credico"
+                          loading="lazy"
+                          style={{ borderRadius: "10px" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12 col-xl-5 mx-auto">
+                      <div className="lc-block mb-3 me-lg-5">
+                        <div editable="rich">
+                          <h1 className="fw-bolder">Stepping Into Future</h1>
+                          <p className="lead">
+                          Get your steps counted every moment and mark a goal.
+                          We offer glimpse into the future with a forecast, helping
+                          you keep your streak on!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="About3" style={{ backgroundColor: "#f0efef" }}>
+          <div style={{ margin: "3% 4% 3% 4%" }}>
+            <div className="container-fluid roboto-regular">
+              {/* <div className="about d-flex">
+              <div className="about-content">
+                <h4>Heart Rate, SPO2 monitoring & traking</h4>
+              </div>
+              <div className="about-image" style={{position:'absolute', right:'4%'}}>
+                <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
+              </div>
+            </div> */}
+              <div>
+                <div className="container-fluid">
+                  <div className="row align-items-center">
+                    <div className="col-12 col-xl-5 mx-auto">
+                      <div className="lc-block mb-3 me-lg-5">
+                        <div editable="rich">
+                          <h1 className="fw-bolder">Comprehensive Overview</h1>
+                          <p className="lead">
+                          Track your burned calories, active minutes, and distance
+                          covered. Easy uderstand metrics and optimize your
+                          workouts and fitness goals.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-10 mx-auto col-xl-5">
+                      <div className="lc-block" style={{paddingTop:"8%", paddingBottom:"8%"}}>
+                        <img
+                          className="img-fluid"
+                          src="./../../dashboard/ativity_distribution.png"
+                          srcset=""
+                          sizes=""
+                          width=""
+                          height=""
+                          alt="Photo by Alessandro Di Credico"
+                          loading="lazy"
+                          style={{ borderRadius: "10px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="About4" style={{ backgroundColor: "white" }}>
+          <div style={{ margin: "3% 4% 1.5% 4%" }}>
+            <div className="container-fluid roboto-regular">
+              {/* <div className="about d-flex">
+              <div className="about-content">
+                <h4>Heart Rate, SPO2 monitoring & traking</h4>
+              </div>
+              <div className="about-image" style={{position:'absolute', right:'4%'}}>
+                <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
+              </div>
+            </div> */}
+              <div>
+                <div className="container-fluid">
+                  <div className="row align-items-center">
+                    <div className="col-md-10 mx-auto col-xl-5 mb-4">
+                      <div className="lc-block">
+                        <img
+                          className="img-fluid"
+                          src="./../../dashboard/diet_plans.png"
+                          srcset=""
+                          sizes=""
+                          width=""
+                          height=""
+                          alt="Photo by Alessandro Di Credico"
+                          loading="lazy"
+                          style={{ borderRadius: "10px", boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12 col-xl-5 mx-auto">
+                      <div className="lc-block mb-3 me-lg-5">
+                        <div editable="rich">
+                          <h1 className="fw-bolder">Your Customized Diet Plan</h1>
+                          <p className="lead">
+                          Diet plays an important role in fitness journy am I right? 
+                          At our platform, we understand the significance of 
+                          personalized nutrition plans tailored to individual needs, 
+                          Connect with us today to get your persnolized diet plan.  
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -401,153 +560,6 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="About" style={{ backgroundColor: "white" }}>
-        <div style={{ margin: "3% 4% 4% 4%" }}>
-          <div className="container-fluid roboto-regular">
-            {/* <div className="about d-flex">
-            <div className="about-content">
-              <h4>Heart Rate, SPO2 monitoring & traking</h4>
-            </div>
-            <div className="about-image" style={{position:'absolute', right:'4%'}}>
-              <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
-            </div>
-          </div> */}
-            <div>
-              <div className="container-fluid">
-                <div className="row align-items-center">
-                  <div className="col-md-10 mx-auto col-xl-5 mb-4">
-                    <div className="lc-block">
-                      <img
-                        className="img-fluid"
-                        src="./../../test1.webp"
-                        srcset=""
-                        sizes=""
-                        width=""
-                        height=""
-                        alt="Photo by Alessandro Di Credico"
-                        loading="lazy"
-                        style={{ borderRadius: "10px" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12 col-xl-5 mx-auto">
-                    <div className="lc-block mb-3 me-lg-5">
-                      <div editable="rich">
-                        <h1 className="fw-bolder">Hello World!</h1>
-                        <p className="lead">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nullam tincidunt ac augue suscipit rhoncus.
-                          Donec ante erat, hendrerit sed eleifend et, dapibus at
-                          leo. Mauris bibendum mi ut dui sagittis volutpat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="About" style={{ backgroundColor: "#f0efef" }}>
-        <div style={{ margin: "3% 4% 4% 4%" }}>
-          <div className="container-fluid roboto-regular">
-            {/* <div className="about d-flex">
-            <div className="about-content">
-              <h4>Heart Rate, SPO2 monitoring & traking</h4>
-            </div>
-            <div className="about-image" style={{position:'absolute', right:'4%'}}>
-              <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
-            </div>
-          </div> */}
-            <div>
-              <div className="container-fluid">
-                <div className="row align-items-center">
-                  <div className="col-12 col-xl-5 mx-auto">
-                    <div className="lc-block mb-3 me-lg-5">
-                      <div editable="rich">
-                        <h1 className="fw-bolder">Hello World!</h1>
-                        <p className="lead">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nullam tincidunt ac augue suscipit rhoncus.
-                          Donec ante erat, hendrerit sed eleifend et, dapibus at
-                          leo. Mauris bibendum mi ut dui sagittis volutpat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-10 mx-auto col-xl-5 mb-4">
-                    <div className="lc-block">
-                      <img
-                        className="img-fluid"
-                        src="./../../test1.webp"
-                        srcset=""
-                        sizes=""
-                        width=""
-                        height=""
-                        alt="Photo by Alessandro Di Credico"
-                        loading="lazy"
-                        style={{ borderRadius: "10px" }}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="About" style={{ backgroundColor: "white" }}>
-        <div style={{ margin: "3% 4% 4% 4%" }}>
-          <div className="container-fluid roboto-regular">
-            {/* <div className="about d-flex">
-            <div className="about-content">
-              <h4>Heart Rate, SPO2 monitoring & traking</h4>
-            </div>
-            <div className="about-image" style={{position:'absolute', right:'4%'}}>
-              <img src="./../../test1.webp" alt="test1" style={{width:'28rem', borderRadius:'10px'}} />
-            </div>
-          </div> */}
-            <div>
-              <div className="container-fluid">
-                <div className="row align-items-center">
-                  <div className="col-md-10 mx-auto col-xl-5 mb-4">
-                    <div className="lc-block">
-                      <img
-                        className="img-fluid"
-                        src="./../../test1.webp"
-                        srcset=""
-                        sizes=""
-                        width=""
-                        height=""
-                        alt="Photo by Alessandro Di Credico"
-                        loading="lazy"
-                        style={{ borderRadius: "10px" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12 col-xl-5 mx-auto">
-                    <div className="lc-block mb-3 me-lg-5">
-                      <div editable="rich">
-                        <h1 className="fw-bolder">Hello World!</h1>
-                        <p className="lead">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nullam tincidunt ac augue suscipit rhoncus.
-                          Donec ante erat, hendrerit sed eleifend et, dapibus at
-                          leo. Mauris bibendum mi ut dui sagittis volutpat.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
       <Footer/>
     </>
   );
